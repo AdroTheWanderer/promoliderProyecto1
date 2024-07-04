@@ -233,8 +233,8 @@ onMounted(() => {
     </div>
   </section>
     <!-- Preguntas Frecuentes -->
-  <section :style="{ backgroundColor: 'var(--color3)' }" class="px-2 md:mx-0">
-    <div class="py-2">
+  <section :style="{ backgroundColor: 'var(--P2color3)' }" class="px-2 md:mx-0">
+    <div class="container mx-auto items-center gap-5 py-2">
       <h2>
         <button
           id="accordion-title-01"
@@ -243,7 +243,7 @@ onMounted(() => {
           :aria-expanded="accordionOpen"
           aria-controls="accordion-text-01"
         >
-          <span>¿Para quién es este producto?</span>
+          <span :style="{ color: 'var(--P2texto)' }" >¿Para quién es este producto?</span>
           <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
@@ -254,26 +254,26 @@ onMounted(() => {
         id="accordion-text-01"
         role="region"
         aria-labelledby="accordion-title-01"
-        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"    
+        class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"    
         :class="accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
       >
         <div class="overflow-hidden">
-          <p class="pb-3">
+          <p :style="{ color: 'var(--P2texto)' }" class="pb-3">
             Quién es el público objetivo de tu producto.
           </p>
         </div>
       </div>    
     </div>
-    <div class="py-2">
+    <div class="container mx-auto items-center gap-5 py-2">
       <h2>
         <button
-          id="accordion-title-01"
+          id="accordion-title-02"
           class="flex items-center justify-between w-full text-left font-semibold py-2"
           @click.prevent="accordionOpen = !accordionOpen"
           :aria-expanded="accordionOpen"
-          aria-controls="accordion-text-01"
+          aria-controls="accordion-text-2"
         >
-          <span>¿Cómo funciona el 'Plazo de Garantía'?</span>
+          <span :style="{ color: 'var(--P2texto)' }">¿Cómo funciona el 'Plazo de Garantía'?</span>
           <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
@@ -281,29 +281,29 @@ onMounted(() => {
         </button>
       </h2>
       <div
-        id="accordion-text-01"
+        id="accordion-text-02"
         role="region"
-        aria-labelledby="accordion-title-01"
-        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"    
+        aria-labelledby="accordion-title-02"
+        class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"    
         :class="accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
       >
         <div class="overflow-hidden">
-          <p class="pb-3">
+          <p :style="{ color: 'var(--P2texto)' }" class="pb-3">
             El Plazo de Garantía es el periodo que tienes para pedir el reembolso integral del valor de tu compra, en caso de que el producto no sea satisfactorio.
           </p>
         </div>
       </div>    
     </div>
-    <div class="py-2">
+    <div class="container mx-auto items-center gap-5 py-2">
       <h2>
         <button
-          id="accordion-title-01"
+          id="accordion-title-03"
           class="flex items-center justify-between w-full text-left font-semibold py-2"
           @click.prevent="accordionOpen = !accordionOpen"
           :aria-expanded="accordionOpen"
-          aria-controls="accordion-text-01"
+          aria-controls="accordion-text-03"
         >
-          <span>¿Qué es y cómo funciona el Certificado de Conclusión digital?</span>
+          <span :style="{ color: 'var(--P2texto)' }">¿Qué es y cómo funciona el Certificado de Conclusión digital?</span>
           <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
@@ -311,29 +311,29 @@ onMounted(() => {
         </button>
       </h2>
       <div
-        id="accordion-text-01"
+        id="accordion-text-03"
         role="region"
-        aria-labelledby="accordion-title-01"
-        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"    
+        aria-labelledby="accordion-title-03"
+        class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"    
         :class="accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
       >
         <div class="overflow-hidden">
-          <p class="pb-3">
+          <p :style="{ color: 'var(--P2texto)' }" class="pb-3">
             Algunos cursos online ofrecen un certificado digital de conclusión. Los alumnos pueden emitir este certificado dentro del curso o ponerse en contacto con el Autor o Autora. Estos certificados pueden compartirse en redes sociales como LinkedIn e incluirse en informaciones curriculares.
           </p>
         </div>
       </div>    
     </div>
-    <div class="py-2">
+    <div class="container mx-auto items-center gap-5 py-2">
       <h2>
         <button
-          id="accordion-title-01"
+          id="accordion-title-04"
           class="flex items-center justify-between w-full text-left font-semibold py-2"
           @click.prevent="accordionOpen = !accordionOpen"
           :aria-expanded="accordionOpen"
-          aria-controls="accordion-text-01"
+          aria-controls="accordion-text-04"
         >
-          <span>¿Cómo hago para comprar?</span>
+          <span :style="{ color: 'var(--P2texto)' }">¿Cómo hago para comprar?</span>
           <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
               <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
@@ -341,14 +341,14 @@ onMounted(() => {
         </button>
       </h2>
       <div
-        id="accordion-text-01"
+        id="accordion-text-04"
         role="region"
-        aria-labelledby="accordion-title-01"
-        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"    
+        aria-labelledby="accordion-title-04"
+        class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"    
         :class="accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
       >
         <div class="overflow-hidden">
-          <p class="pb-3">
+          <p :style="{ color: 'var(--P2texto)' }" class="pb-3">
             Para comprar este curso, haz clic en el botón “Comprar ahora”. Recuerda que no todos los productos estarán siempre disponibles para su compra. Es posible que el Productor esté preparando un nuevo grupo todavía sin inscripciones abiertas.
           </p>
         </div>
