@@ -13,9 +13,15 @@ const changeColor2 = () => {
 };
 
 const accordionOpen = ref<boolean>(false)
+const accordionOpen2 = ref<boolean>(false)
+const accordionOpen3 = ref<boolean>(false)
+const accordionOpen4 = ref<boolean>(false)
 
 onMounted(() => {
-  accordionOpen.value = false
+  accordionOpen.value = false;
+  accordionOpen2.value = false;
+  accordionOpen3.value = false;
+  accordionOpen4.value = false;
 })
 
 </script>
@@ -269,14 +275,14 @@ onMounted(() => {
         <button
           id="accordion-title-02"
           class="flex items-center justify-between w-full text-left font-semibold py-2"
-          @click.prevent="accordionOpen = !accordionOpen"
-          :aria-expanded="accordionOpen"
+          @click.prevent="accordionOpen2 = !accordionOpen2"
+          :aria-expanded="accordionOpen2"
           aria-controls="accordion-text-2"
         >
           <span :style="{ color: 'var(--P2texto)' }">¿Cómo funciona el 'Plazo de Garantía'?</span>
           <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
-              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen2 }" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen2 }" />
           </svg>      
         </button>
       </h2>
@@ -285,7 +291,7 @@ onMounted(() => {
         role="region"
         aria-labelledby="accordion-title-02"
         class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"    
-        :class="accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+        :class="accordionOpen2 ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
       >
         <div class="overflow-hidden">
           <p :style="{ color: 'var(--P2texto)' }" class="pb-3">
@@ -299,14 +305,14 @@ onMounted(() => {
         <button
           id="accordion-title-03"
           class="flex items-center justify-between w-full text-left font-semibold py-2"
-          @click.prevent="accordionOpen = !accordionOpen"
-          :aria-expanded="accordionOpen"
+          @click.prevent="accordionOpen3 = !accordionOpen3"
+          :aria-expanded="accordionOpen3"
           aria-controls="accordion-text-03"
         >
           <span :style="{ color: 'var(--P2texto)' }">¿Qué es y cómo funciona el Certificado de Conclusión digital?</span>
           <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
-              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen3 }" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen3 }" />
           </svg>      
         </button>
       </h2>
@@ -315,7 +321,7 @@ onMounted(() => {
         role="region"
         aria-labelledby="accordion-title-03"
         class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"    
-        :class="accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+        :class="accordionOpen3 ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
       >
         <div class="overflow-hidden">
           <p :style="{ color: 'var(--P2texto)' }" class="pb-3">
@@ -329,14 +335,14 @@ onMounted(() => {
         <button
           id="accordion-title-04"
           class="flex items-center justify-between w-full text-left font-semibold py-2"
-          @click.prevent="accordionOpen = !accordionOpen"
-          :aria-expanded="accordionOpen"
+          @click.prevent="accordionOpen4 = !accordionOpen4"
+          :aria-expanded="accordionOpen4"
           aria-controls="accordion-text-04"
         >
           <span :style="{ color: 'var(--P2texto)' }">¿Cómo hago para comprar?</span>
           <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
-              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen }" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen4 }" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{ '!rotate-180': accordionOpen4 }" />
           </svg>      
         </button>
       </h2>
@@ -345,7 +351,7 @@ onMounted(() => {
         role="region"
         aria-labelledby="accordion-title-04"
         class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"    
-        :class="accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+        :class="accordionOpen4 ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
       >
         <div class="overflow-hidden">
           <p :style="{ color: 'var(--P2texto)' }" class="pb-3">
